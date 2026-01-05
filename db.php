@@ -3,7 +3,7 @@ $host = "localhost";
 $port = "5432";
 $db   = "employee_system";
 $user = "postgres";
-$pass = "emir005"; // kendi şifren
+$pass = "sifre"; // kendi şifren
 
 try {
     $pdo = new PDO(
@@ -18,5 +18,6 @@ try {
 } catch (PDOException $e) {
     die("Bağlantı hatası: " . $e->getMessage());
 }
+
 
 session_start();
